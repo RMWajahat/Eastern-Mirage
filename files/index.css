@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;1,400;1,500&family=Nanum+Gothic:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&family=Prata&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+:root {
+    --primary-fg: #000000;
+    --primary-bg: #f6f6f6;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+    background: var(--primary-bg);
+
+
+}
+
+/* Home Section  */
+section {
+    position: relative;
+    min-height: 90vh;
+    width: 93vw;
+    margin: auto;
+
+}
+
+.home {
+    display: grid;
+    place-items: center;
+}
+
+.home .tags {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: fit-content;
+}
+
+.tag {
+
+    height: fit-content;
+    width: fit-content;
+}
+
+.tag h1 {
+    font-size: 48px;
+    font-style: oblique;
+    letter-spacing: -6.2px;
+    /* word-spacing: 1px; */
+    z-index: 2;
+    height: 45px;
+}
+
+img {
+    transition: 5s;
+}
+
+#bg_img {
+    opacity: 0;
+    height: 100vh;
+    max-width: 90%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1.4s;
+}
+
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 9;
+}

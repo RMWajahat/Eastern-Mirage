@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;1,400;1,500&family=Nanum+Gothic:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&family=Prata&display=swap');
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    scroll-padding: 40px;
+}
+
+:root {
+    --primary-fg: #000000;
+    --primary-bg: #f6f6f6;
+}
+
+
+html::-webkit-scrollbar {
+    background: none;
+    width: 0;
+}
+
+/* nav */
+.nav {
+    width: 93vw;
+    min-width: 120px;
+    margin: auto;
+    font-family: 'Prata', serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navlinks {
+
+    padding: 9px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 32px;
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-fg);
+}
+
+a {
+    color: var(--primary-fg);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header>* {
+    width: 450px;
+    color: var(--primary-fg);
+    font-size: 13px;
+    text-align: center;
+    line-height: 16px;
+}
+
+.header .text p {
+    align-items: baseline;
+    width: 80%;
+    text-align: left;
+}
+
+.header .text p a {
+    font-family: 'poppins', sans-serif;
+    font-size: 12px;
+    padding-left: 5px;
+    font-weight: 400;
+}
+
+.header .text p a:hover {
+    text-decoration: underline;
+}
+
+.pagetitle {
+    width: 200px;
+    aspect-ratio: 3/1;
+    object-fit: cover;
+}
+
+.reachout {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 12px;
+    gap: 2px;
+
+}
+
+/* footer */
+
+.footer {
+    height: 50px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.footer .row {
+    display: flex;
+    width: 94%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin: auto;
+    padding: 12px 0;
+}
+
+.footer .row .copy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+}
+
+.footer .row .copy span:nth-child(2) {
+    font-weight: 500;
+    line-height: 14px;
+}
+
+.footer .row .ft_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    font-weight: normal;
+}
