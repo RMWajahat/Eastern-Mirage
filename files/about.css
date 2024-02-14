@@ -1,0 +1,90 @@
+/* libre bodoni */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;1,400;1,500;1,600;1,700&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+:root{
+    --primary-fg:#000000;
+    --primary-bg:#f6f6f6;
+}
+body{
+    overflow-x:hidden;
+    position: relative;
+    background: var(--primary-bg);
+}
+
+.about{
+    width: 93vw;
+    margin: 10vh auto ;
+    font-family: 'Libre Bodoni', serif;
+    font-stretch: ultra-condensed;
+    min-height: 70svh;
+    display: grid;
+    gap: 1.3vw;
+    grid-template-columns: repeat(3,32.5vw);
+}
+.tagline{
+    width: 90%;
+}
+.tagline h1{
+    width: 80%;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: -5px;
+    line-height: 57px;
+    word-spacing: 2px;
+    font-style: italic;
+}
+.about img{
+    width: 380px;
+    translate: -50px 0px;
+}
+
+.details{
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+.details h1{
+    position: relative;
+    width: 98%;
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: 500;
+    letter-spacing: -4px;
+    word-spacing: 9px;
+}
+.details h1 span{
+    
+    word-spacing: 7px;
+    font-size: 58px;
+    letter-spacing: -8px;
+    font-weight: 500;
+    font-family: 'Libre Bodoni', serif;
+    font-style: italic;
+}
+
+.about_data{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-weight: 200;
+    font-size: 15px;
+}
+.contact_info{
+    font-size: 15px;
+    font-weight: 300;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
