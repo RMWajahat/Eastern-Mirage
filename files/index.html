@@ -50,12 +50,12 @@
 
     <script>
         let EntryVideo = document.getElementById('myVideo');
+        EntryVideo.play();
         document.addEventListener('DOMContentLoaded', (event) => {
-            EntryVideo.play();
             setTimeout(() => {
                 EntryVideo.pause();
                 EntryVideo.style.display = 'none';
-            }, 3000);
+            }, 2000);
 
         });
 
