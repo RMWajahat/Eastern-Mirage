@@ -42,25 +42,13 @@
 
 
     <video id="myVideo" height="256" loop="false" autoplay="autoplay" muted>
-        <source type="video/mp4" src="../assets/Blinking.mp4">
+        <source type="video/mp4" src="../assets/w.mp4">
         </source>
-        <source type="video/ogg" src="../assets/Blinking.mp4">
+        <source type="video/ogg" src="../assets/w.mp4">
         </source>
     </video>
 
-    <script>
-        let EntryVideo = document.getElementById('myVideo');
-        EntryVideo.play();
-        document.addEventListener('DOMContentLoaded', (event) => {
-            setTimeout(() => {
-                EntryVideo.pause();
-                EntryVideo.style.display = 'none';
-            }, 2000);
 
-        });
-
-
-    </script>
 
     <section class="home">
         <img src="" id="bg_img" lazyloading>
@@ -127,6 +115,19 @@
     </footer>
 
     <script src="./eastern_mirage.js" async></script>
+    <script>
+        let EntryVideo = document.getElementById('myVideo');
+        EntryVideo.play();
+        document.addEventListener('DOMContentLoaded', (event) => {
+            setTimeout(() => {
+                EntryVideo.pause();
+                EntryVideo.style.display = 'none';
+            }, 2000);
+
+        });
+
+
+    </script>
 </body>
 
 </html>

@@ -14,6 +14,15 @@
 </head>
 
 <body>
+    <video id="myVideo" height="256" loop="false" autoplay="autoplay" muted>
+        <source type="video/mp4" src="../assets/w.mp4">
+        </source>
+        <source type="video/ogg" src="../assets/w.mp4">
+        </source>
+    </video>
+
+
+
     <nav class="nav">
         <ul class="navlinks">
             <li><a href="index.html">work</a></li>
@@ -309,7 +318,17 @@
 
 
 
+    <script>
+        let EntryVideo = document.getElementById('myVideo');
+        EntryVideo.play();
+        document.addEventListener('DOMContentLoaded', (event) => {
+            setTimeout(() => {
+                EntryVideo.pause();
+                EntryVideo.style.display = 'none';
+            }, 1500);
 
+        });
+    </script>
     <script>
         var txts = document.querySelectorAll(".floating_txt");
         let edits = document.querySelectorAll('.edits');
