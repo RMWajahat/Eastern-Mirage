@@ -15,11 +15,12 @@
 
 <body>
     <video id="myVideo" height="256" loop="false" autoplay="autoplay" muted>
-        <source type="video/mp4" src="../assets/w.mp4">
+        <source type="video/mp4" src="../assets/Lemon.mp4">
         </source>
-        <source type="video/ogg" src="../assets/w.mp4">
+        <source type="video/ogg" src="../assets/Lemon.mp4">
         </source>
     </video>
+    <img id="loader_img" src="../assets/blender.jpeg" alt="">
 
 
 
@@ -40,9 +41,9 @@
             <a href="index.html"><img class="pagetitle" src="../assets/eastern_logo.png"></a>
 
             <div class="reachout">
-                <span>46 Warwick Avenue, W9 2PU</span>
-                <span>London, United Kingdom</span>
-                <a href="about.html">+ 44 7984332917</a>
+                <!-- <span>46 Warwick Avenue, W9 2PU</span> -->
+                <!-- <span>you can add address here </span> -->
+                <a href="mailto:Nadine@easternmirage.com" target="_blank">Nadine@easternmirage.com</a>
             </div>
         </div>
         <hr>
@@ -101,8 +102,8 @@
             <h1 class="floating_txt">SERVICE Nº 02</h1>
             <div class="edit_main">
                 <div class="edit_desc">
-                    <h1>______________<br>
-                        <span>concept creation</span>
+                    <h1><br>
+                        <span>Concept creation</span>
                     </h1>
                     <span>May 15th, 2020<br>
                         <hr>
@@ -152,7 +153,7 @@
             <div class="edit_main">
                 <div class="edit_desc">
                     <h1>Print<br>
-                        <span> --- Design</span>
+                        <span>Design</span>
                     </h1>
                     <span>May 15th, 2020<br>
                         <hr>
@@ -227,7 +228,7 @@
             <div class="edit_main">
                 <div class="edit_desc">
                     <h1>Layout<br>
-                        <span> --- Design</span>
+                        <span>D e s i g n</span>
                     </h1>
                     <span>May 15th, 2020<br>
                         <hr>
@@ -300,7 +301,8 @@
                 <span>&copy; eastern mirage</span>
                 <span>
                     to discuss potential future <br>
-                    projects please contact us at: <a href="">studio@horrorvacuistudio.com</a>
+                    projects please contact us at: <a href="mailto:Nadine@easternmirage.com"
+                        target="_blank">Nadine@easternmirage.com</a>
                 </span>
             </span>
             <span class="ft_links">
@@ -318,16 +320,27 @@
 
 
 
+    <script src="./eastern_mirage.js" async></script>
     <script>
         let EntryVideo = document.getElementById('myVideo');
+        let loader_img = document.getElementById('loader_img');
+
         EntryVideo.play();
         document.addEventListener('DOMContentLoaded', (event) => {
             setTimeout(() => {
                 EntryVideo.pause();
                 EntryVideo.style.display = 'none';
-            }, 1500);
+                loader_img.style.display = 'block';
+                loader_img.style.height = '100vh';
+            }, 2000);
+            setTimeout(() => {
+                loader_img.style.height = '100px';
+                loader_img.style.display = 'none';
+            }, 3000);
 
         });
+
+
     </script>
     <script>
         var txts = document.querySelectorAll(".floating_txt");

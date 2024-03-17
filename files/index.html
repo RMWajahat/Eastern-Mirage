@@ -30,9 +30,9 @@
             <a href="index.html"><img class="pagetitle" src="../assets/eastern_logo.png"></a>
 
             <div class="reachout">
-                <span>46 Warwick Avenue, W9 2PU</span>
-                <span>London, United Kingdom</span>
-                <a href="#">+ 44 7984332917</a>
+                <!-- <span>46 Warwick Avenue, W9 2PU</span>
+                <span>London, United Kingdom</span> -->
+                <a href="mailto:Nadine@easternmirage.com" target="_blank">Nadine@easternmirage.com</a>
             </div>
         </div>
         <hr>
@@ -42,11 +42,12 @@
 
 
     <video id="myVideo" height="256" loop="false" autoplay="autoplay" muted>
-        <source type="video/mp4" src="../assets/w.mp4">
+        <source type="video/mp4" src="../assets/Lemon.mp4">
         </source>
-        <source type="video/ogg" src="../assets/w.mp4">
+        <source type="video/ogg" src="../assets/Lemon.mp4">
         </source>
     </video>
+    <img id="loader_img" src="../assets/blender.jpeg" alt="">
 
 
 
@@ -117,12 +118,20 @@
     <script src="./eastern_mirage.js" async></script>
     <script>
         let EntryVideo = document.getElementById('myVideo');
+        let loader_img = document.getElementById('loader_img');
+
         EntryVideo.play();
         document.addEventListener('DOMContentLoaded', (event) => {
             setTimeout(() => {
                 EntryVideo.pause();
                 EntryVideo.style.display = 'none';
+                loader_img.style.display = 'block';
+                loader_img.style.height = '100vh';
             }, 2000);
+            setTimeout(() => {
+                loader_img.style.height = '100px';
+                loader_img.style.display = 'none';
+            }, 3000);
 
         });
 

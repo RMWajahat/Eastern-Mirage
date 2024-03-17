@@ -80,6 +80,7 @@ body {
     font-weight: 500;
     letter-spacing: -6px;
     word-spacing: 5px;
+    text-transform: uppercase;
 
 }
 
@@ -89,6 +90,7 @@ body {
     font-weight: 500;
     font-family: 'Libre Bodoni', serif;
     font-style: italic;
+    text-transform: uppercase;
 }
 
 .edit_desc span {

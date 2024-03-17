@@ -14,11 +14,12 @@
 
 <body>
     <video id="myVideo" height="256" loop="false" autoplay="autoplay" muted>
-        <source type="video/mp4" src="../assets/w.mp4">
+        <source type="video/mp4" src="../assets/Lemon.mp4">
         </source>
-        <source type="video/ogg" src="../assets/w.mp4">
+        <source type="video/ogg" src="../assets/Lemon.mp4">
         </source>
     </video>
+    <img id="loader_img" src="../assets/blender.jpeg" alt="">
     <nav class="nav">
         <ul class="navlinks">
             <li><a href="index.html">work</a></li>
@@ -36,9 +37,9 @@
             <a href="index.html"><img class="pagetitle" src="../assets/eastern_logo.png"></a>
 
             <div class="reachout">
-                <span>46 Warwick Avenue, W9 2PU</span>
-                <span>London, United Kingdom</span>
-                <a href="#">+ 44 7984332917</a>
+                <!-- <span>46 Warwick Avenue, W9 2PU</span>
+                <span>London, United Kingdom</span> -->
+                <a href="mailto:Nadine@easternmirage.com" target="_blank">Nadine@easternmirage.com</a>
             </div>
         </div>
         <hr>
@@ -62,7 +63,7 @@
             <p class="about_data">
                 <span>
                     <em>"Eastern Mirage"</em> is a creative project that explores the intersection of
-                    photography, graphic design, and artificial intelligence, offering a
+                    visuals, graphic design, and artificial intelligence, offering a
                     unique visual experience inspired by the Middle East venturing into the
                     realm of visual storytelling.
                 </span>
@@ -91,16 +92,16 @@
                 </span>
             </p>
             <p class="contact_info">
-                <span>Email: .......................... <a href="#">studio@easternmirage.com</a></span> <br>
-                <span>Phone: ....................................................... <a href="#">+44
-                        7984332917</a></span> <br>
-                <span>Address .............................. 46 Warwick Avenue, London</span>
+                <span>Email: ................................... <a href="#">Nadine@easternmirage.com</a></span>
+                <br>
+                <!-- here yo can add number -->
+                <span><a href="#"></a></span> <br>
+                <span></span>
             </p>
         </div>
         <div class="tagline">
             <h1>Eastern mirage is a modern - culture approach on digital / print storytelling. Energized by visual
-                curiosity and a singular point of view that celebrates craftsmanship, agility and humour. Design studio
-                from art direction to editorial & digital design.</h1>
+                curiosity. Design studio from art direction to editorial & digital design.</h1>
         </div>
         <img src="../assets/red_one.png" id="aboutus_pic" alt="aboutus_pic" lazyloading>
     </section>
@@ -115,7 +116,8 @@
                 <span>&copy;eastern mirage</span>
                 <span>
                     to discuss potential future <br>
-                    projects please contact us at: <a href="">studio@horrorvacuistudio.com</a>
+                    projects please contact us at: <a href="mailto:Nadine@easternmirage.com"
+                        target="_blank">Nadine@easternmirage.com</a>
                 </span>
             </span>
             <span class="ft_links">
@@ -125,14 +127,23 @@
         </span>
     </footer>
 
+    <script src="./eastern_mirage.js" async></script>
     <script>
         let EntryVideo = document.getElementById('myVideo');
+        let loader_img = document.getElementById('loader_img');
+
         EntryVideo.play();
         document.addEventListener('DOMContentLoaded', (event) => {
             setTimeout(() => {
                 EntryVideo.pause();
                 EntryVideo.style.display = 'none';
-            }, 1500);
+                loader_img.style.display = 'block';
+                loader_img.style.height = '100vh';
+            }, 2000);
+            setTimeout(() => {
+                loader_img.style.height = '100px';
+                loader_img.style.display = 'none';
+            }, 3000);
 
         });
 
